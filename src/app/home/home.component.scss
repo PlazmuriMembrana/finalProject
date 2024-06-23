@@ -1,0 +1,146 @@
+:root {
+    --primary-font: "Helvetica W01 Roman";
+    --primary-color: #1b1b32;
+    --secondary-color: #d2e1ee;
+    --black-color: black;
+    --white-color: white;
+  }
+  
+  .res{
+    opacity: 0;
+  }
+  
+  html{
+    background-color: #1b1b32;
+  }
+  
+  .space {
+    height: 5vw;
+    width: 100%;
+  }
+  
+  h1{
+    font-family: "Helvetica W01 Roman";
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2vw;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+  }
+    .containerForCard {
+      display: flex;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    
+    .icon {
+      margin-left: 35%;
+      margin-right: 35%;
+      margin-top: 35%;
+    }
+    
+    .svgIcon {
+      margin-left: 35%;
+      margin-right: 35%;
+      margin-top: 45%;
+    }
+  
+    .svgIconArch {
+      margin-left: 32%;
+      margin-right: 32%;
+      margin-top: 45%;
+    }
+  
+    .svgIconAbout{
+      margin-left: 37%;
+      margin-right: 37%;
+      margin-top: 45%;
+      margin-bottom: 5%;
+    }
+    
+    @keyframes iconAnimation {
+      from {
+        fill: black;
+        margin-top: 45%;
+      }
+      to {
+        fill: #ab8e1f;
+        margin-top: 30%;
+      }
+    }
+    
+    @keyframes iconAnimationArch {
+      from {
+        fill: black;
+        margin-top: 45%;
+      }
+      to {
+        fill: #1793d1;
+        margin-top: 30%;
+      }
+    }
+  
+    @keyframes iconAnimationAbout {
+      from {
+        fill: black;
+        margin-top: 45%;
+      }
+      to {
+        fill: #9a0819;
+        margin-top: 30%;
+      }
+  } 
+    .cardOfLogo:hover .svgIconAbout {
+      animation: iconAnimationAbout 1s forwards;
+   
+    }
+    .cardOfLogo:hover .svgIconArch {
+      animation: iconAnimationArch 1s forwards;
+    }
+  
+  
+    .cardOfLogo:hover .svgIcon {
+      animation: iconAnimation 1s forwards;
+    }
+  
+  
+    .info {
+      font-family: "Helvetica W01 Roman";
+      font-size: medium;
+      position: relative;
+      text-align: center;
+      color: whitesmoke;
+      opacity: 0;
+    }
+    
+    .cardOfLogo:hover .info {
+      opacity: 1;
+      transition: all 5s;
+    }
+  
+    .cardOfLogo {
+      width: 30%;
+      height: 30vw;
+      background-color: #0a0a164d;
+      margin: 10px;
+      border-radius: 3%;
+      border: 3px solid;
+      border-color: black;
+    }
+  
+  @media screen and (max-width: 600px) {
+    .containerForCard{
+      display: grid;
+    }
+    .cardOfLogo{
+      width: 75%;
+      height: 70vw;
+      margin-left: 13%;
+
+    }
+  }
+ 
+  

@@ -1,0 +1,28 @@
+html{
+    width: 100%;
+    height: 90vw;
+    background-color: #1b1b32;
+}
+
+.heading{
+    text-align: center;
+    color: azure;
+}
+
+.space{
+    background-color: #1b1b32;
+    width: 100%;
+    height: 3vw;
+}
+
+p{
+    text-align: center;
+    color: azure;
+
+}
+
+@media screen and (max-width: 600px) {
+    html{
+        height: 200vw;
+    }
+}
